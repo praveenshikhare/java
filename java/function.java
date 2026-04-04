@@ -41,26 +41,53 @@ public class function {
     // }
 
     // factorial of a number 
-    public static void calculateFactorial(int n){
-        if(n<0){
-            System.out.println("invalid number");
-            return;
-        }
-        int factorial =1;
-        for(int i=n; i>=1; i--){
-            factorial=factorial*i;
+    // public static void calculateFactorial(int n){
+    //     if(n<0){
+    //         System.out.println("invalid number");
+    //         return;
+    //     }
+    //     int factorial =1;
+    //     for(int i=n; i>=1; i--){
+    //         factorial=factorial*i;
             
+    //     }
+    //     System.out.println("factorial of number : "+factorial);
+    //     return;
+    // }
+    // public static void main(String[] args) {
+    //     Scanner Sc=new Scanner(System.in);
+    //     int n =Sc.nextInt();
+    //     calculateFactorial(n);
+    
+    // }
+
+    // even or odd
+    // public static void checkEvenOrOdd(int n){
+    //     if(n%2==0){
+    //         System.out.println("even");
+    //         return;
+    //     }else{
+    //         System.out.println("odd");
+    //         return;
+    //     }
+    // }
+    // public static void main(String[] args) {
+    //     Scanner Sc =new Scanner(System.in);
+    //     int n=Sc.nextInt();
+    //     checkEvenOrOdd(n);
+
+    // }
+
+    // table of a number
+    public static void printTable(int n){
+        for(int i=1; i<=10; i++){
+            System.out.println(n*i);   
         }
-        System.out.println("factorial of number : "+factorial);
-        return;
-    }
+    } 
     public static void main(String[] args) {
         Scanner Sc=new Scanner(System.in);
-        int n =Sc.nextInt();
-        calculateFactorial(n);
-
-        
-        
+        int n=Sc.nextInt();
+        printTable(n);
     }
     
 }
